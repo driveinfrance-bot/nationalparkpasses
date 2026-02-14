@@ -1,0 +1,43 @@
+.shiny-text {
+    color: inherit;
+    display: inline-block;
+  
+    /* Base + shine gradient */
+    background-image: linear-gradient(
+      120deg,
+      currentColor 0%,
+      currentColor 40%,
+      rgba(255, 255, 255, 0.95) 50%,
+      currentColor 60%,
+      currentColor 100%
+    );
+  
+    background-size: 300% 100%;
+    background-position-x: 200%;
+    background-position-y: 0;
+  
+    /* Clip background to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    /* Animation */
+    animation-name: shine;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: 200%;
+    }
+    100% {
+      background-position-x: -200%;
+    }
+  }
+  
+  .shiny-text.disabled {
+    animation: none;
+  }
+  
