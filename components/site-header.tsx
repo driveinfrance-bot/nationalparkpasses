@@ -1,10 +1,12 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import CartBadge from "@/components/passes/cart-badge";
 
 const navItems = [
+  { href: "/passes", label: "Pass finder" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/pricing", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
@@ -37,11 +39,11 @@ function MobileNav() {
             </Link>
           ))}
           <Link
-            href="/apply"
+            href="/passes"
             className="button w-full justify-center"
             onClick={() => setOpen(false)}
           >
-            Apply now
+            Start booking
           </Link>
         </div>
       ) : null}
@@ -55,11 +57,11 @@ export default function SiteHeader() {
       <div className="container flex items-center justify-between gap-4 py-4">
         <Link href="/" className="flex items-center gap-3">
           <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-500 text-white shadow-md shadow-blue-200/60 flex items-center justify-center font-semibold">
-            DF
+            NP
           </div>
           <div>
-            <p className="text-base font-semibold">Drive in France</p>
-            <p className="text-xs text-slate-500">Removing the complexity</p>
+            <p className="text-base font-semibold">National Park Passes</p>
+            <p className="text-xs text-slate-500">Processed within 12 hours</p>
           </div>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
@@ -74,8 +76,9 @@ export default function SiteHeader() {
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <Link href="/apply" className="button text-sm">
-            Apply now
+          <CartBadge />
+          <Link href="/passes" className="button text-sm">
+            Start booking
           </Link>
         </div>
         <MobileNav />
@@ -83,4 +86,3 @@ export default function SiteHeader() {
     </header>
   );
 }
-
