@@ -12,10 +12,9 @@ export default function SiteFooter() {
     <footer className="border-t border-slate-200 bg-white">
       <div className="container grid grid-2 items-start gap-8 py-10">
         <div className="space-y-3">
-          <p className="text-lg font-semibold">Drive in France</p>
+          <p className="text-lg font-semibold">National Park Passes</p>
           <p className="text-sm text-slate-600 max-w-lg">
-            Private English-language assistance to submit your Crit’Air sticker
-            application quickly and securely.
+            Private booking and application assistance for Australian national park passes and permits.
           </p>
         </div>
         <div className="grid grid-2 gap-4 sm:grid-3">
@@ -37,7 +36,7 @@ export default function SiteFooter() {
               <Link className="hover:text-blue-700" href="/faq">
                 FAQ
               </Link>
-              <p>support@driveinfrance.co</p>
+              <p>support@nationalparkpasses.com.au</p>
             </div>
           </div>
           <div>
@@ -55,11 +54,11 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-slate-200 bg-slate-50 px-4 py-3 text-center text-xs text-slate-600">
         This is a private application assistance service and not affiliated with
-        the French government.
+        Australian state or territory governments.
       </div>
       <div className="border-t border-slate-200 bg-slate-50 py-4">
         <div className="container flex flex-col gap-2 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} Drive in France. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} National Park Passes. All rights reserved.</span>
           <span>Payments processed by Stripe. Cards, Apple Pay, Google Pay supported.</span>
         </div>
       </div>
