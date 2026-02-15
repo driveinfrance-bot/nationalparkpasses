@@ -80,7 +80,7 @@ export default async function AdminOrdersPage() {
                           <a
                             key={u.id}
                             href={u.storagePath}
-                            className="text-blue-700 underline"
+                            className="text-[#1F3A2E] underline"
                             target="_blank"
                           >
                             {u.storagePath}

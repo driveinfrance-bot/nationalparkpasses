@@ -56,7 +56,7 @@ export default function SiteHeader() {
     <header className="border-b border-slate-200 bg-white/90 backdrop-blur-md">
       <div className="container flex items-center justify-between gap-4 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-500 text-white shadow-md shadow-blue-200/60 flex items-center justify-center font-semibold">
+          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#1F3A2E] to-[#2a4b3d] text-white shadow-md shadow-[#1F3A2E]/25 flex items-center justify-center font-semibold">
             NP
           </div>
           <div>
@@ -69,7 +69,7 @@ export default function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="transition hover:text-blue-700"
+              className="transition hover:text-[#1F3A2E]"
             >
               {item.label}
             </Link>

@@ -23,7 +23,7 @@ export default function SiteFooter() {
             <div className="mt-3 space-y-2 text-sm text-slate-600">
               {footerLinks.map((link) => (
                 <div key={link.href}>
-                  <Link className="hover:text-blue-700" href={link.href}>
+                  <Link className="hover:text-[#1F3A2E]" href={link.href}>
                     {link.label}
                   </Link>
                 </div>
@@ -33,7 +33,7 @@ export default function SiteFooter() {
           <div>
             <p className="text-sm font-semibold text-slate-700">Support</p>
             <div className="mt-3 space-y-2 text-sm text-slate-600">
-              <Link className="hover:text-blue-700" href="/faq">
+              <Link className="hover:text-[#1F3A2E]" href="/faq">
                 FAQ
               </Link>
               <p>support@nationalparkpasses.com.au</p>
@@ -42,10 +42,10 @@ export default function SiteFooter() {
           <div>
             <p className="text-sm font-semibold text-slate-700">Legal</p>
             <div className="mt-3 space-y-2 text-sm text-slate-600">
-              <Link className="hover:text-blue-700" href="/privacy">
+              <Link className="hover:text-[#1F3A2E]" href="/privacy">
                 Privacy
               </Link>
-              <Link className="hover:text-blue-700" href="/terms">
+              <Link className="hover:text-[#1F3A2E]" href="/terms">
                 Terms
               </Link>
             </div>
