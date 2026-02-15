@@ -29,7 +29,7 @@ export default async function BlogIndexPage() {
         <div className="grid grid-2 gap-4">
           {posts.map((post) => (
             <article key={post.slug} className="card p-5">
-              <p className="text-xs uppercase tracking-wide text-blue-700">
+              <p className="text-xs uppercase tracking-wide text-[#1F3A2E]">
                 {post.publishedAt ?? "Draft"}
               </p>
               <h2 className="mt-2 text-xl font-semibold text-slate-900">
@@ -47,7 +47,7 @@ export default async function BlogIndexPage() {
                 ))}
               </div>
               <Link
-                className="mt-4 inline-flex font-semibold text-blue-700"
+                className="mt-4 inline-flex font-semibold text-[#1F3A2E]"
                 href={`/blog/${post.slug}`}
               >
                 Read post →
