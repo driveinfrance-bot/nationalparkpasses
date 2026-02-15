@@ -17,8 +17,6 @@ if (secretKey) {
   } catch (error) {
     console.error("Failed to initialize Stripe:", error);
   }
-} else {
-  console.warn("STRIPE_SECRET_KEY is not set in environment variables");
 }
 
 export const stripe = stripeInstance;
