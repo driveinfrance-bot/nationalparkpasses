@@ -19,7 +19,7 @@ export default function CartBadge() {
   }, []);
 
   return (
-    <Link href="/checkout" className="text-sm font-medium text-slate-700 hover:text-blue-700">
+    <Link href="/checkout" className="text-sm font-medium text-slate-700 hover:text-[#1F3A2E]">
       Cart ({count})
     </Link>
   );

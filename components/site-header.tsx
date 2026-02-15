@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -55,21 +56,22 @@ export default function SiteHeader() {
   return (
     <header className="border-b border-slate-200 bg-white/90 backdrop-blur-md">
       <div className="container flex items-center justify-between gap-4 py-4">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-500 text-white shadow-md shadow-blue-200/60 flex items-center justify-center font-semibold">
-            NP
-          </div>
-          <div>
-            <p className="text-base font-semibold">National Park Passes</p>
-            <p className="text-xs text-slate-500">Processed within 12 hours</p>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/national-park-passes-logo.svg"
+            alt="National Park Passes"
+            width={280}
+            height={72}
+            className="h-12 w-auto sm:h-14"
+            priority
+          />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="transition hover:text-blue-700"
+              className="transition hover:text-[#1F3A2E]"
             >
               {item.label}
             </Link>

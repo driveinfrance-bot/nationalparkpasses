@@ -41,7 +41,7 @@ export default async function BlogPostPage({
     <div className="section">
       <div className="container max-w-3xl space-y-6">
         <div className="space-y-2">
-          <p className="text-xs uppercase tracking-wide text-blue-700">
+          <p className="text-xs uppercase tracking-wide text-[#1F3A2E]">
             {post.publishedAt ?? "Draft"}
           </p>
           <h1 className="text-4xl font-semibold">{post.title}</h1>
