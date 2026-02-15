@@ -6,11 +6,11 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const primaryTokenStyles: React.CSSProperties = {
-  "--button-bg": "var(--accent-9)",
-  "--button-bg-hover": "var(--accent-10)",
-  "--button-bg-active": "var(--accent-11)",
-  "--button-fg": "var(--accent-contrast)",
-  "--button-radius": "var(--radius-3)",
+  "--button-bg": "var(--accent-9, #1F3A2E)",
+  "--button-bg-hover": "var(--accent-10, #2a4b3d)",
+  "--button-bg-active": "var(--accent-11, #162c22)",
+  "--button-fg": "var(--accent-contrast, #ffffff)",
+  "--button-radius": "var(--radius-3, 0.5rem)",
 } as React.CSSProperties;
 
 export function Button({ className, variant = "default", style, ...props }: ButtonProps) {
