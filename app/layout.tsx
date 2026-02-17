@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Drive in France | Crit’Air Sticker Help",
+  title: "National Park Passes | Book passes online",
   description:
-    "Apply for your French Crit’Air emissions sticker with fast, English-language help. Private processing service with secure checkout.",
-  metadataBase: new URL("https://driveinfrance.co"),
+    "Book Australian national park passes in minutes. Secure Stripe checkout and private booking assistance, processed within 12 hours.",
+  metadataBase: new URL("https://nationalparkpasses.com.au"),
   openGraph: {
-    title: "Drive in France | Crit’Air Sticker Help",
+    title: "National Park Passes | Book passes online",
     description:
-      "Private assistance to get your French Crit’Air emissions sticker. Mobile-friendly, English-first, secure checkout.",
-    url: "https://driveinfrance.co",
+      "Find park passes by state, add multiple items to cart, and checkout securely with Stripe.",
+    url: "https://nationalparkpasses.com.au",
     type: "website",
   },
 };
