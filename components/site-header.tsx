@@ -44,7 +44,7 @@ function MobileNav() {
             className="button w-full justify-center"
             onClick={() => setOpen(false)}
           >
-            Start booking
+            Find my pass
           </Link>
         </div>
       ) : null}
@@ -80,7 +80,7 @@ export default function SiteHeader() {
         <div className="hidden md:flex items-center gap-3">
           <CartBadge />
           <Link href="/passes" className="button text-sm">
-            Start booking
+            Find my pass
           </Link>
         </div>
         <MobileNav />
