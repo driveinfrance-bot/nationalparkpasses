@@ -44,23 +44,32 @@ export async function POST(request: Request) {
     }
 
     const priceId = process.env.STRIPE_PRICE_ID;
-    if (!priceId) {
-      return NextResponse.json(
-        { error: "STRIPE_PRICE_ID not configured" },
-        { status: 500 }
-      );
-    }
+    const lineItems = priceId
+      ? [
+          {
+            price: priceId,
+            quantity: 1,
+          },
+        ]
+      : [
+          {
+            price_data: {
+              currency: order.currency.toLowerCase(),
+              product_data: {
+                name: "National Park Passes booking",
+                description: `Order ${order.id}`,
+              },
+              unit_amount: order.priceCents,
+            },
+            quantity: 1,
+          },
+        ];
 
     const baseUrl = process.env.BASE_URL || "http://localhost:3000";
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
+      line_items: lineItems,
       customer_email: order.email || undefined,
       metadata: {
         orderId: order.id,
