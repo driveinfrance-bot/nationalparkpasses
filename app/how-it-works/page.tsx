@@ -45,7 +45,7 @@ export default function HowItWorksPage() {
           {steps.map((step, idx) => (
             <div key={step.title} className="card p-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600/10 font-semibold text-blue-700">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1F3A2E]/10 font-semibold text-[#1F3A2E]">
                   {idx + 1}
                 </span>
                 <p className="text-lg font-semibold text-slate-900">

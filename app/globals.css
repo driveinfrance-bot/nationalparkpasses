@@ -142,7 +142,7 @@
   background: #fff;
   border: 1px solid color-mix(in srgb, var(--border) 70%, #dfe7ef);
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(15, 82, 186, 0.05);
+  box-shadow: 0 10px 30px rgba(31, 58, 46, 0.08);
 }
 
 .button {
@@ -154,14 +154,14 @@
   border-radius: 9999px;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(90deg, #0f52ba, #2563eb);
+  background: #1f3a2e;
   border: 1px solid transparent;
   transition: all 150ms ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 12px 30px rgba(31, 58, 46, 0.25);
 }
 
 .badge {
@@ -171,9 +171,9 @@
   padding: 0.35rem 0.75rem;
   border-radius: 9999px;
   font-weight: 600;
-  background: #e0e7ff;
-  color: #1d4ed8;
-  border: 1px solid #d7e0ff;
+  background: #e8f0ec;
+  color: #1f3a2e;
+  border: 1px solid #cdded6;
 }
 
 .input {
@@ -188,7 +188,7 @@
 .input:focus {
   border-color: var(--ring);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 3px rgba(31, 58, 46, 0.2);
 }
 
 .hero-grid {
@@ -216,9 +216,9 @@
   padding: 0.4rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.9rem;
-  background: #eef2ff;
-  color: #1e3a8a;
-  border: 1px solid #e0e7ff;
+  background: #edf4f1;
+  color: #1f3a2e;
+  border: 1px solid #d6e5de;
 }
 
 .ghost-link {
@@ -236,12 +236,12 @@
 
 .ghost-link:hover {
   border-color: #cbd5e1;
-  color: #0f52ba;
+  color: #1f3a2e;
 }
 
 .gradient-underline {
   display: inline-block;
-  background-image: linear-gradient(120deg, #93c5fd, #2563eb);
+  background-image: linear-gradient(120deg, #8fb8a7, #1f3a2e);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 100% 0.18em;
@@ -258,8 +258,8 @@
   height: 0.25em;
   background: radial-gradient(
     ellipse at center,
-    rgba(37, 99, 235, 0.35),
-    rgba(37, 99, 235, 0) 70%
+    rgba(31, 58, 46, 0.3),
+    rgba(31, 58, 46, 0) 70%
   );
   pointer-events: none;
 }
@@ -316,7 +316,7 @@
 }
 
 .blog-content a {
-  color: #1d4ed8;
+  color: #1f3a2e;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 600;
@@ -328,8 +328,8 @@
 }
 
 .blog-content blockquote {
-  border-left: 4px solid #bfdbfe;
-  background: #eff6ff;
+  border-left: 4px solid #cdded6;
+  background: #edf4f1;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
 }
